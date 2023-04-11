@@ -8,11 +8,11 @@
    flex-basis: 100%;
    flex-grow: 0;
    flex-shrink: 0;
-   background-color: antiquewhite;
+   background-color: rgb(231, 215, 250);
 }
 .Layout aside{
-  flex:20% 0 0;
-  background-color: azure;
+  flex:  20%   0  0;
+  background-color: goldenrod;
 }
 .Layout main {
   flex: 80% 1 1;
