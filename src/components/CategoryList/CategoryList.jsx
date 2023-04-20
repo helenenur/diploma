@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./CategoryList.css";
 import { NavLink } from "react-router-dom";
 import { AppContext } from "../../App";
