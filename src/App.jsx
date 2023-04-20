@@ -11,12 +11,12 @@ import { getDocs } from "firebase/firestore";
 
 export const AppContext = createContext({
   categories: [],
-  products: []
+  products: [],
 });
 
 export default function App() {
   const [categories, setCategories] = useState([]);
-  const [products,setProducts]= useState([ ]);
+  const [products, setProducts] = useState([]);
   useEffect(() => {
     getDocs(categoryCollection).then((snapshot) => {
       const newCategories = [];
@@ -35,7 +35,7 @@ export default function App() {
       const newProducts = [];
 
       snapshot.docs.forEach((doc) => {
-        const product  = doc.data();
+        const product = doc.data();
         product.id = doc.id;
 
         newProducts.push(category);
@@ -47,7 +47,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories,products }}>
+      <AppContext.Provider value={{ categories, products }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
