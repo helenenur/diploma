@@ -8,6 +8,7 @@ import {
   categoryCollection,
   onAuthChange,
   productCollection,
+  orderCollection,
 } from "./firebase";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/NotFound";
@@ -18,7 +19,7 @@ import Orders from "./pages/Order";
 export const AppContext = createContext({
   categories: [],
   products: [],
-  orders:[],
+  orders: [],
 
   // корзина
   cart: {},
@@ -30,16 +31,14 @@ export const AppContext = createContext({
 export default function App() {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [orders, setOrders]= useState([ ]);
+  const [orders, setOrders] = useState([]);
 
   // состояние которое хранит информацию пользователя
   const [user, setUser] = useState(null);
 
   // корзина
   const [cart, setCart] = useState(() => {
-    // восстановить содержимое корзинки из памяти браузера.
-    return JSON.parse(localStorage.getItem("cart")) || {};
-  });
+    
 
   // выполнить эту функцию только когда содержимое корзинки меняется
   useEffect(() => {
@@ -49,6 +48,8 @@ export default function App() {
 
   // выполнить эту функцию только один раз
   useEffect(() => {
+    // получить категории из списка категорий
+   
     // получить категории из списка категорий
     getDocs(categoryCollection).then((snapshot) => {
       // категории будут храниться в snapshot.docs
@@ -68,25 +69,21 @@ export default function App() {
     });
 
     // получить продукты из списка продуктов
-    getDocs(productCollection).then((snapshot) => {
+    getDocs(orderCollection).then((snapshot) => {
       // продукты будут храниться в snapshot.docs
 
       // создать массив для продуктов
-      const newProducts = [];
+      const newOrders = [];
       // заполнить массив данными из списка продвук
       snapshot.docs.forEach((doc) => {
         // doc = продукт
-        const product = doc.data();
-        product.id = doc.id;
+        const order = doc.data();
+        order.id = doc.id;
 
-        newProducts.push(product);
+        newOrders.push(order);
       });
       // задать новый массив как состояние комапо
-      setProducts(newProducts);
-    });
-
-      // задать новый массив как состояние комапо
-      setCategories(newCategories);
+      setOrders(newOrders);
     });
 
     // получить продукты из списка продуктов
@@ -107,11 +104,30 @@ export default function App() {
       setProducts(newProducts);
     });
 
-    onAuthChange((user) => {
-      setUser(user);
+
+  onAuthChange((user) => {
+    setUser(user);
+  });
+  // получить продукты из списка продуктов
+  getDocs(orderCollection).then((snapshot) => {
+    // продукты будут храниться в snapshot.docs
+
+    // создать массив для продуктов
+    const newOrders = [];
+    // заполнить массив данными из списка продвук
+    snapshot.docs.forEach((doc) => {
+      // doc = продукт
+      const order = doc.data();
+      order.id = doc.id;
+
+      newOrders.push(order);
     });
-  }, []);
-  
+    // задать новый массив как состояние комапо
+    setOrders(newOrders);
+  });// восстановить содержимое корзинки из памяти браузера.
+    return JSON.parse(localStorage.getItem("cart")) || {};
+  });
+
   return (
     <div className="App">
       <AppContext.Provider
