@@ -1,8 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {collection, getFirestore} from "firebase/firestore";
-import {GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signOut}from "firebase/auth";
-import { useCallback } from "react";
+import {GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signOut} from "firebase/auth";
 
 
 // Your web app's Firebase configuration
