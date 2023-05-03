@@ -10,8 +10,10 @@ export default function Layout(props) {
   return (
     <div className="Layout">
       <header>
-        <Logo />
-        <Nav />
+        <div className="head">
+          <Logo />
+          <Nav />
+        </div>
         <CartLink/>
         <Auth/>
       </header>
