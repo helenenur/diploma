@@ -22,4 +22,22 @@
   left: 550px;
 }
 
+.CartLink {
+  display: flex;
+  display: flex;
+  height: 10vh;
+  position: relative;
+  padding: 15px;
+}
 
+.CartLink img {
+  height: 30px;
+  position: absolute;
+  border-radius: 50px;
+  top: 3px;
+  left: 60px;
+}
+.CartLink a {
+  padding: 2px 100px;
+  left: 560px;
+}
