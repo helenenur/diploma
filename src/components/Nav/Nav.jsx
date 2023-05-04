@@ -21,38 +21,3 @@ export default function Nav() {
     </nav>
   );
 }
-
-<nav class="nav-container">
-  <h1 id="logo">LOGO</h1>
-
-  <div class="hamburger">
-    <span class="lines"></span>
-    <span class="lines"></span>
-    <span class="lines"></span>
-  </div>
-
-  <ul id="nav-links">
-    <li>
-      <a href="#" class="links">
-        Home
-      </a>
-    </li>
-    <li>
-      <a href="#" class="links">
-        About
-      </a>
-    </li>
-    <li>
-      <a href="#" class="links">
-        Contacts
-      </a>
-    </li>
-    <li>
-      <a href="#" class="links">
-        Delivery
-      </a>
-    </li>
-  </ul>
-</nav>;
-
-
