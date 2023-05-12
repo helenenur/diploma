@@ -14,13 +14,14 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .Layout aside {
   flex: 20% 0 0;
   background-color: goldenrod;
 }
 .Layout main {
   flex: 80% 1 1;
-  background-color: rgb(168, 160, 255);
+  background-color: rgb(137, 137, 151);
 }
 .Layout footer {
   flex: 100% 0 0;
@@ -37,4 +38,26 @@
   justify-content: space-between;
   background: #191e24f5;
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
+}
+.frame {
+  height: 90vh;
+  width: 90vw;
+  margin: 5vh 5vw;
+  background-color: #eee;
+  background-position: center;
+  background-size: cover;
+
+  animation: image 2s infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRocgIuR8LUZ-gbCtfEdXfTdET0Dk_GN8GX5A&usqp=CAU");
+  }
+  100% {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwycCtEFAXoHulOYIVgJySSlzxPadiGkVbnA&usqp=CAU");
+  }
+}
+.About{
+  background-image: url(./assets/logo.jpg);
 }
