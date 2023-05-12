@@ -1,4 +1,3 @@
-
 import "./About.css";
 
 export default function About() {
@@ -13,7 +12,9 @@ export default function About() {
         ship about 20.000 orders a day.
       </p>
 
-      <DisplayHeader />
+      
     </div>
+      // <DisplayHeader />
+
   );
 }
