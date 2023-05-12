@@ -12,7 +12,7 @@ export default function CartLink() {
     <div className="CartLink">
       <Link to="/cart">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLdOyACPxuzmX6JaBM-E_Cn52eplbOpSjFyw&usqp=CAU"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBSni6wz9pQIzcVEVkQt3YY9O27hULIsA-qQ&usqp=CAU"
           alt="Cart-pht"
         />
         {total}
