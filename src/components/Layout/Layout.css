@@ -39,25 +39,8 @@
   background: #191e24f5;
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
 }
-.frame {
-  height: 90vh;
-  width: 90vw;
-  margin: 5vh 5vw;
-  background-color: #eee;
-  background-position: center;
+
+/* .About {
+  background-image: url(./https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVfMfOVVkWPcoDCZigxLQ7N1js0YB_1y1pvZb1mN6QQqjUywOg2cMa7uI3-hjPcUjhZWs&usqp=CAU);
   background-size: cover;
-
-  animation: image 2s infinite alternate;
-}
-
-@keyframes image {
-  0% {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRocgIuR8LUZ-gbCtfEdXfTdET0Dk_GN8GX5A&usqp=CAU");
-  }
-  100% {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwycCtEFAXoHulOYIVgJySSlzxPadiGkVbnA&usqp=CAU");
-  }
-}
-.About{
-  background-image: url(./assets/logo.jpg);
-}
+} */
