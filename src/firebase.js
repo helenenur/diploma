@@ -9,6 +9,8 @@ import {
   signOut,
 } from "firebase/auth";
 
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyD3aCRYXx05DHFZHesfxQO7AU_Zlh0h_gg",
@@ -21,8 +23,9 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
- export const db = getFirestore(app);
+export const db = getFirestore(app);
 const auth = getAuth(app);
+export const storage = getStorage(app);
 
 // получить список категорий (коллекция документов).
 export const categoryCollection = collection(db, "categories");
@@ -61,3 +64,11 @@ export const onOrdersLoad = (callback) =>
       }))
     )
   );
+  // отправка фотографии и получение ее url
+export const uploadProductPhoto = async (file) => {
+  const storageRef = ref(storage, `products/${file.name}`);
+  await uploadBytes(storageRef, file);
+
+  const url = await getDownloadURL(storageRef);
+  return url;
+};
