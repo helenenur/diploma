@@ -26,7 +26,7 @@ export default function Layout(props) {
           <CartLink />
           <Auth />
         </div>
-        </header>
+      </header>
       <aside>
         <CategoryList />
       </aside>
@@ -35,4 +35,3 @@ export default function Layout(props) {
     </div>
   );
 }
-
