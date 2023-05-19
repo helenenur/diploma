@@ -26,9 +26,7 @@ export default function Layout(props) {
           <Auth />
         </div>
       </header>
-      <aside>
-        <CategoryList />
-      </aside>
+      {/* <aside><CategoryList/></aside> */}
       <main>{props.children}</main>
       <footer>Footer</footer>
     </div>
