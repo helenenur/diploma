@@ -18,8 +18,6 @@ import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
-import AboutList from "./components/AboutList/AboutList";
-import HomeList from "./components/HomeList/HomeList";
 
 export const AppContext = createContext({
   categories: [],
@@ -127,8 +125,8 @@ export default function App() {
       >
         <Layout>
           <Routes>
-            <Route path="/" element={<HomeList />} />
-            <Route path="/about" element={<AboutList />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/category/:path" element={<Category />} />

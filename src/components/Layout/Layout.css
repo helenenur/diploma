@@ -14,24 +14,18 @@
   justify-content: space-between;
   align-items: center;
 }
-header {
-  margin-bottom: 30px;
-}
 
-/* .Layout aside {
+.Layout aside {
   flex: 20% 0 0;
   background-color: goldenrod;
-} */
+}
 .Layout main {
   flex: 80% 1 1;
-  background-color: rgb(234, 234, 241);
+  background-color: rgb(137, 137, 151);
 }
 .Layout footer {
   flex: 100% 0 0;
-  background-color: rgb(26, 25, 25);
-}
-footer {
-  margin-top: 30px;
+  background-color: rgb(235, 235, 235);
 }
 
 @media (max-width: 650px) {
@@ -42,10 +36,6 @@ footer {
 .head {
   display: flex;
   justify-content: space-between;
-  background: hwb(210 97% 0%);
-  box-shadow: 10px 10px 10px rgb(128, 128, 128);
-}
-.Layout main {
-  padding-left: 30px;
-  background: none;
+  background: #191e24f5;
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
 }

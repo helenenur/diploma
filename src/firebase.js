@@ -64,14 +64,11 @@ export const onOrdersLoad = (callback) =>
       }))
     )
   );
-// отправка фотографии и получение ее url
-export const uploadProductPhoto = (file) => {
+  // отправка фотографии и получение ее url
+export const uploadProductPhoto = async (file) => {
   const storageRef = ref(storage, `products/${file.name}`);
-  return uploadBytes(storageRef, file)
-    .then(() => {
-      return getDownloadURL(storageRef);
-    })
-    .catch((error) => {
-      console.log("Failed to upload product photo:", error);
-    });
+  await uploadBytes(storageRef, file);
+
+  const url = await getDownloadURL(storageRef);
+  return url;
 };
