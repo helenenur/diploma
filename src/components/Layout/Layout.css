@@ -39,3 +39,36 @@
   background: #191e24f5;
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.548);
 }
+
+.About {
+  background: url(https://i.pinimg.com/564x/3a/f4/0b/3af40b7df24a8686093b4131127014e3.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.About::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.About > * {
+  z-index: 1;
+  position: relative;
+}
+.About h1{
+  margin-bottom: 30px;
+}
+.About  p{
+  max-width: 80%;
+}
