@@ -72,3 +72,37 @@
 .About  p{
   max-width: 80%;
 }
+.Home {
+  background: url(https://i.pinimg.com/564x/9a/ef/4e/9aef4eb4301ef6ca5464c9574fd0d2bd.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.Home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.Home> * {
+  z-index: 1;
+  position: relative;
+}
+.Home h1{
+  margin-bottom: 30px;
+}
+.Home  p{
+  max-width: 80%;
+}
+
+
