@@ -47,8 +47,6 @@
   background-color: #c6f6f65a;
 }
 
-
-
 @media (max-width: 1200px) {
   .CategoryList li:active {
     text-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
@@ -130,7 +128,7 @@
     white-space: nowrap;
   }
   .subcategory {
-    display: none!important;
+    display: none !important;
   }
   .CategoryList .dropdownContent {
     position: relative;

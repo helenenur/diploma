@@ -53,13 +53,13 @@
   color: rgb(201, 169, 169);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .footer-column {
     flex-basis: 50%;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 900px) {
   .footer-column {
     flex-basis: 100%;
   }
