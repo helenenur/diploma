@@ -1,7 +1,6 @@
 .footer {
   box-shadow: 0 0 10px;
   align-items: center;
-  margin: 0 5px;
 }
 .footer-container {
   display: flex;
@@ -52,7 +51,36 @@
   cursor: pointer;
   color: rgb(201, 169, 169);
 }
-
+footer .footer-list li a,
+footer .footer-list li {
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+footer .footer-list li {
+  width: 100%;
+  padding: 0;
+}
+.footer-column p {
+  margin-bottom: 10px;
+}
+.AddToCart button {
+  border: none;
+  padding: 5px 15px;
+}
+.AddToCart button:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-color: #fff;
+}
+.Product_info span {
+  margin-bottom: 10px;
+  display: block;
+}
+.Product_info a {
+  display: block;
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 900px) {
   .footer-column {
     flex-basis: 50%;

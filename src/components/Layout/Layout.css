@@ -8,8 +8,7 @@
   flex-basis: 100%;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: rgb(231, 215, 250);
-
+  background-color: #030303;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +23,13 @@
   background-color: rgb(137, 137, 151);
 }
 .Layout footer {
+  padding: 40px 0;
   flex: 100% 0 0;
-  background-color: rgb(235, 235, 235);
+  background-color: #030303;
+  color: #fff;
+}
+.Layout footer .footer-column a {
+  color: #fff;
 }
 
 @media (max-width: 650px) {

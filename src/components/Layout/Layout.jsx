@@ -75,9 +75,7 @@ export default function Layout(props) {
         {props.children}
         {/* {Example} */}
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }
