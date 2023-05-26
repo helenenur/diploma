@@ -39,8 +39,8 @@ function Footer() {
         </div>
         <div className="footer-column">
           <h4 className="footer-heading">Contact</h4>
-          <p>Bags shop</p>
-          <p>City, Bishkek</p>
+          <p>Sneakers e-commerce</p>
+          <p>C. Bishkek</p>
           <div className="directions-to-administrator">
             <a
               className="Tel"
