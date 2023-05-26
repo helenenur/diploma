@@ -1,5 +1,5 @@
 import "./Logo.css";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logotip.png";
 import { NavLink } from "react-router-dom";
 
 export default function Logo() {
