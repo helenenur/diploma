@@ -66,10 +66,10 @@
   z-index: 1;
   position: relative;
 }
-.About h1{
+.About h1 {
   margin-bottom: 30px;
 }
-.About  p{
+.About p {
   max-width: 80%;
 }
 .Home {
@@ -94,15 +94,40 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-.Home> * {
+.Home > * {
   z-index: 1;
   position: relative;
 }
-.Home h1{
+.Home h1 {
   margin-bottom: 30px;
 }
-.Home  p{
+.Home p {
   max-width: 80%;
 }
 
-
+.Contacts {
+  background: url(https://i.pinimg.com/236x/77/a8/92/77a89272744463654d03191d99154072.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.Delivery{
+  background: url(https://i.pinimg.com/236x/c2/e5/c8/c2e5c83b699aba8020f345129f5aa931.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}

@@ -1,0 +1,60 @@
+.Product{
+  margin: 0 15%;
+}
+.Product1{
+  display: flex;
+  justify-content: center;
+  margin: 58px auto;
+}
+.Product1 img{
+  height: 250px;
+}
+.Product-text{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+}
+.Product1 button{
+  margin: 8px 0 0;
+}
+.card_text{
+  padding: 8px;
+  line-height: 25px;
+}
+
+
+.Product_description{
+  background-color: white;
+  width: 40%;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+.Product .Product_navigation{
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.Product .Product_navigation button{
+  margin: 0 15px 20px;
+  color: wheat;
+  width: 80px;
+  color: black;
+  padding: 6px 8px;
+  transition: 1.3s;
+  scale: 1;
+  background-color: aqua;
+}
+.Product .Product_navigation button:hover{
+  scale: 1.4;
+}
+.Product .Product_navigation Link{
+  text-decoration: none;
+  color: white;
+}
