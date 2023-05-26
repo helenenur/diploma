@@ -1,17 +1,16 @@
 .ProductList .Product {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 250px;
   margin: 20px;
   background-color: white;
   padding-bottom: 20px;
-  box-shadow: 6px 5px 6px rgb(5, 73, 116);
+
   cursor: pointer;
 }
 .ProductList {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 7%;
 }
 .ProductList .Product img {
   width: 250px;
@@ -22,7 +21,7 @@
       rgba(182, 178, 183, 0.227),
       rgba(55, 214, 238, 0.073)
     ),
-    url(https://i.pinimg.com/564x/df/58/20/df5820cc523cbd07cf9a09bf8ec92c3e.jpg);
+    url(https://i.pinimg.com/564x/b0/d9/12/b0d91260ba5a7db06ba5cda44e032e2e.jpg);
   background-size: cover;
   padding: 20px 0;
 }
@@ -45,9 +44,7 @@
   color: #7b3633;
   transition: 0.3s;
 }
-.ProductList a:hover {
-  text-shadow: 0 0 2px #140707;
-}
+
 .Category {
   margin: 0;
   color: #7b3633;
