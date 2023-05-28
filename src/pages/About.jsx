@@ -11,10 +11,7 @@ export default function About() {
         countries. 20+ million customers around the world have trusted us. We
         ship about 20.000 orders a day.
       </p>
-
-      
     </div>
-      // <DisplayHeader />
-
+    // <DisplayHeader />
   );
 }

@@ -1,72 +1,72 @@
-*{
+* {
   box-sizing: border-box;
 }
-body{
-  margin:0;
+body {
+  margin: 0;
 }
-.head{
+.head {
   width: 100%;
   align-items: center;
 }
-.Logo img{
+.Logo img {
   display: block;
 }
-.Logo a{
+.Logo a {
   display: block;
 }
-.CategoryList li{
+.CategoryList li {
   list-style-type: none;
 }
-.CartLink img{
+.CartLink img {
   position: static;
 }
-nav{
-  box-shadow:  none;
+nav {
+  box-shadow: none;
   background: transparent;
 }
-.Auth button{
+.Auth button {
   margin-left: 10px;
   background: none;
   color: #fff;
   padding: 3px 8px;
   border: none;
-  box-shadow:  none;
+  box-shadow: none;
   cursor: pointer;
   transition: 0.3sl;
 }
-.Auth button:hover{
+.Auth button:hover {
   color: #ccc;
 }
-.Auth a{
+.Auth a {
   color: #fff;
 }
 .CartLink {
   padding: 0;
 }
-.CartLink a{
+.CartLink a {
   padding: 0;
   height: auto;
   display: flex;
   align-items: center;
   color: #fff;
 }
-.CartLink  img{
+.CartLink img {
   display: block;
   margin-right: 5px;
 }
-.CategoryList a{
+.CategoryList a {
   font-size: 14px;
   padding: 0;
   text-align: left;
   display: block;
 }
-.CategoryList li{
+.CategoryList li {
   width: 100%;
   padding: 10px;
 }
-.Layout{
+.Layout {
   height: 100%;
 }
-.Layout main{
+.Layout main {
   min-height: 600px;
 }
